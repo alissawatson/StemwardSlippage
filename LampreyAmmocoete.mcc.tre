@@ -1,0 +1,80 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=69;
+	Taxlabels
+		Achanarella
+		Ciderius
+		Cornovichthys
+		EupG_01_02
+		EupG_01_101
+		EupG_01_123
+		EupG_01_125
+		EupG_01_126
+		EupG_01_130
+		EupG_01_135
+		EupG_01_136
+		EupG_01_137
+		EupG_01_150
+		EupG_01_158
+		EupG_01_179
+		EupG_01_181
+		EupG_01_200
+		EupG_01_69
+		EupG_01_98
+		EupG_P6813
+		Euphanerops
+		Euphanerops_Cal2018
+		Jamoytius
+		Lamprey_ammocoete_D1
+		Lamprey_ammocoete_D2
+		Lamprey_ammocoete_D3
+		Lamprey_ammocoete_D4
+		Lamprey_ammocoete_D5
+		Lamprey_ammocoete_D6
+		Lamprey_ammocoete_F
+		Lasanius
+		MayoG_PF10788_14
+		MayoG_PF12387_15
+		MayoG_PF14088_19
+		MayoG_PF5539_7
+		MayoG_PF5687_5
+		MayoG_PF5688_12
+		MayoG_PF5688_6
+		MayoG_PF7514_9
+		MayoG_PF8344_18
+		MayoG_PF8345_17
+		MayoG_PF8346_13
+		MayoG_PF8617_11
+		MayoG_PF8665_8
+		MayoG_V56777_16
+		MayoG_V56779A_20
+		MayoG_V56787_1
+		MayoG_V56788_2
+		MayoG_V56800_3
+		MayoG_V56806_4
+		MayoG_V56828_10
+		Mayomyzon
+		Mayomyzon_D4
+		Mesomyzon
+		MesomyzonCJ21
+		Myxinikela
+		Palaeo_Hirasawa
+		Palaeo_JMT
+		Palaeo_Johanson
+		Palaeo_Miyashita_C
+		Palaeo_Miyashita_G
+		Pri_Adult_D4
+		Pri_Early_Larval_D4
+		Pri_Hatchling_D4
+		Pri_Juvi_D4
+		Pri_Late_Larval_D4
+		Pri_Late_Larval_D5
+		Priscomyzon
+		Tethymyxine
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((((((((((((EupG_01_158[&index=20,age_95%_HPD={0,36.1574}]:-1.246110,Palaeo_Miyashita_G[&index=59,age_95%_HPD={0,36.973}]:-1.346543)[&index=70,posterior=0.007699,age_95%_HPD={0.095921,30.2317}]:17.664332,Lamprey_ammocoete_D5[&index=55,age_95%_HPD={0,36.2097}]:16.308797)[&index=71,posterior=0.000067,age_95%_HPD={27.4521,27.4521}]:-1.936985,((Palaeo_Hirasawa[&index=35,age_95%_HPD={0,35.9214}]:2.677577,Pri_Late_Larval_D5[&index=47,age_95%_HPD={0,36.0935}]:2.725180)[&index=72,posterior=0.008199,age_95%_HPD={0.020219,40.2333}]:26.266593,MayoG_PF10788_14[&index=3,age_95%_HPD={0,35.872}]:28.903382)[&index=73,posterior=0.000167,age_95%_HPD={2.18849,23.0424}]:-14.559787)[&index=74,posterior=0.000033,age_95%_HPD={23.4026,23.4026}]:5.503444,(Mayomyzon_D4[&index=60,age_95%_HPD={0,35.6964}]:-0.650328,Pri_Hatchling_D4[&index=29,age_95%_HPD={0,37.0453}]:-0.740079)[&index=75,posterior=0.007733,age_95%_HPD={0.107854,44.8989}]:20.627992)[&index=76,posterior=0.000033,age_95%_HPD={28.906,28.906}]:5.193945,MayoG_V56787_1[&index=24,age_95%_HPD={0,35.6541}]:25.199286)[&index=77,posterior=0.000033,age_95%_HPD={34.1,34.1}]:0.659880,(((EupG_01_130[&index=64,age_95%_HPD={0,36.6798}]:-0.084307,MayoG_PF8665_8[&index=42,age_95%_HPD={0,36.0419}]:0.057070)[&index=78,posterior=0.006333,age_95%_HPD={0.105805,28.0966}]:-1.354039,MayoG_V56777_16[&index=43,sampled_ancestor=0.000067,age_95%_HPD={0,36.3997}]:-1.372678)[&index=79,posterior=0.000167,age_95%_HPD={1.32329,10.6977}]:6.558892,(EupG_01_125[&index=58,age_95%_HPD={0,35.8406}]:-0.104370,Pri_Juvi_D4[&index=17,age_95%_HPD={0,37.1833}]:-0.231660)[&index=80,posterior=0.007233,age_95%_HPD={0.060378,31.6281}]:5.361869)[&index=81,posterior=0.000067,age_95%_HPD={21.1616,21.1616}]:20.604835)[&index=82,posterior=0.000033,age_95%_HPD={34.7599,34.7599}]:0.490183,Lamprey_ammocoete_D4[&index=32,age_95%_HPD={0,35.5445}]:26.277340)[&index=83,posterior=0.000033,age_95%_HPD={35.25,35.25}]:4.917668,(MayoG_PF5688_12[&index=37,age_95%_HPD={0,38.0196}]:-1.266640,Pri_Adult_D4[&index=15,age_95%_HPD={0,36.7687}]:-1.054416)[&index=84,posterior=0.008533,age_95%_HPD={0.089732,33.2729}]:32.250645)[&index=85,posterior=0.000033,age_95%_HPD={40.1677,40.1677}]:0.586345,(EupG_01_200[&index=30,age_95%_HPD={0,36.1376}]:1.398623,Euphanerops_Cal2018[&index=36,age_95%_HPD={0,35.9677}]:1.433769)[&index=86,posterior=0.007033,age_95%_HPD={0.030114,42.3144}]:30.417170)[&index=87,posterior=0.000033,age_95%_HPD={40.7541,40.7541}]:0.747384,(MayoG_PF8346_13[&index=21,age_95%_HPD={0,35.2147}]:0.984689,MayoG_PF8617_11[&index=6,age_95%_HPD={0,36.1403}]:0.830863)[&index=88,posterior=0.007933,age_95%_HPD={0.016709,32.5717}]:31.701406)[&index=89,posterior=0.000033,age_95%_HPD={41.5014,41.5014}]:2.016192,Pri_Early_Larval_D4[&index=25,age_95%_HPD={0,36.0388}]:34.674278)[&index=90,posterior=0.000033,age_95%_HPD={43.5176,43.5176}]:1.007020,(MayoG_V56779A_20[&index=33,age_95%_HPD={0,35.7496}]:0.320727,Mesomyzon[&index=26,age_95%_HPD={0,36.5337}]:0.302588)[&index=91,posterior=0.007799,age_95%_HPD={0.09386,40.0889}]:35.209247)[&index=92,posterior=0.000033,age_95%_HPD={44.5246,44.5246}]:1.402630,(((((((((EupG_01_02[&index=46,age_95%_HPD={0,35.9754}]:0.589745,Lamprey_ammocoete_D6[&index=50,age_95%_HPD={0,35.7705}]:0.568996)[&index=93,posterior=0.007100,age_95%_HPD={0.106108,34.5967}]:4.398878,(MayoG_PF8345_17[&index=7,age_95%_HPD={0,36.6678}]:-3.275524,MayoG_V56800_3[&index=23,age_95%_HPD={0,35.9026}]:-3.135898)[&index=94,posterior=0.007366,age_95%_HPD={0.039807,21.2516}]:8.152760)[&index=95,posterior=0.000033,age_95%_HPD={13.9361,13.9361}]:2.217152,(Lamprey_ammocoete_D1[&index=66,age_95%_HPD={0,36.1423}]:-1.366215,MayoG_V56828_10[&index=34,age_95%_HPD={0,36.2776}]:-1.288160)[&index=96,posterior=0.007633,age_95%_HPD={0.05595,29.1609}]:8.534623)[&index=97,posterior=0.000033,age_95%_HPD={16.1532,16.1532}]:5.505008,(Lamprey_ammocoete_D2[&index=49,age_95%_HPD={0,36.9865}]:-0.554231,Mayomyzon[&index=62,age_95%_HPD={0,36.5165}]:-0.576262)[&index=98,posterior=0.007100,age_95%_HPD={0.159051,35.9055}]:13.176060)[&index=99,posterior=0.000033,age_95%_HPD={21.6582,21.6582}]:0.959074,(((EupG_01_123[&index=51,age_95%_HPD={0,36.7049}]:-0.992381,Jamoytius[&index=56,age_95%_HPD={0,36.7368}]:-0.883135)[&index=100,posterior=0.007633,age_95%_HPD={0.047392,28.309}]:-1.494204,Lamprey_ammocoete_F[&index=2,age_95%_HPD={0,36.5743}]:-2.416047)[&index=101,posterior=0.000133,age_95%_HPD={1.51716,8.83926}]:9.353098,(EupG_01_136[&index=12,age_95%_HPD={0,36.5176}]:-0.545911,EupG_01_98[&index=31,age_95%_HPD={0,35.1119}]:-0.402533)[&index=102,posterior=0.007333,age_95%_HPD={0.036266,31.1617}]:7.379040)[&index=103,posterior=0.000033,age_95%_HPD={15.8661,15.8661}]:6.751211)[&index=104,posterior=0.000033,age_95%_HPD={22.6173,22.6173}]:8.734984,(EupG_01_181[&index=61,age_95%_HPD={0,35.3828}]:0.729074,Lamprey_ammocoete_D3[&index=40,age_95%_HPD={0,36.334}]:0.550921)[&index=105,posterior=0.007733,age_95%_HPD={0.030718,44.9942}]:21.791060)[&index=106,posterior=0.000033,age_95%_HPD={31.3523,31.3523}]:1.573777,(MayoG_PF5687_5[&index=27,age_95%_HPD={0,35.9151}]:-0.693259,Tethymyxine[&index=57,age_95%_HPD={0,36.7844}]:-0.692266)[&index=107,posterior=0.007666,age_95%_HPD={0.025368,31.6137}]:24.648134)[&index=108,posterior=0.000033,age_95%_HPD={32.9261,32.9261}]:3.695620,((EupG_01_135[&index=53,sampled_ancestor=0.000033,age_95%_HPD={0,36.4841}]:-0.193574,Palaeo_Miyashita_C[&index=10,age_95%_HPD={0,35.3767}]:-0.120550)[&index=109,posterior=0.008533,age_95%_HPD={0.200702,31.521}]:20.362159,MayoG_PF5688_6[&index=22,age_95%_HPD={0,36.5876}]:20.149621)[&index=110,posterior=0.000367,age_95%_HPD={0.308274,58.7994}]:7.464210)[&index=111,posterior=0.000033,age_95%_HPD={36.6217,36.6217}]:3.869279,Myxinikela[&index=14,age_95%_HPD={0,36.2361}]:31.532618)[&index=112,posterior=0.000033,age_95%_HPD={40.491,40.491}]:5.436294)[&index=113,posterior=0.000033,age_95%_HPD={45.9273,45.9273}]:5.066271,((((((EupG_01_150[&index=8,age_95%_HPD={0,35.8669}]:0.905644,MayoG_PF7514_9[&index=5,age_95%_HPD={0,37.0087}]:0.790146)[&index=114,posterior=0.007799,age_95%_HPD={0.037568,36.2295}]:0.533739,MesomyzonCJ21[&index=67,age_95%_HPD={0,36.2849}]:1.445347)[&index=115,posterior=0.000167,age_95%_HPD={0.214995,15.6574}]:17.917734,EupG_01_101[&index=28,age_95%_HPD={0,36.1047}]:19.269913)[&index=116,posterior=0.000067,age_95%_HPD={34.9886,34.9886}]:7.023165,((Ciderius[&index=16,age_95%_HPD={0,35.9804}]:-0.914757,MayoG_PF5539_7[&index=18,age_95%_HPD={0,36.5115}]:-0.839321)[&index=117,posterior=0.007899,age_95%_HPD={0.053952,31.1732}]:3.611697,MayoG_PF14088_19[&index=19,sampled_ancestor=0.000033,age_95%_HPD={0,36.7432}]:2.625647)[&index=118,posterior=0.000133,age_95%_HPD={3.90845,7.6457}]:23.637269)[&index=119,posterior=0.000033,age_95%_HPD={35.3221,35.3221}]:10.647147,(Cornovichthys[&index=65,age_95%_HPD={0,36.7757}]:-0.970331,Euphanerops[&index=48,age_95%_HPD={0,36.7416}]:-0.914052)[&index=120,posterior=0.007166,age_95%_HPD={0.09895,42.08}]:37.919481)[&index=121,posterior=0.000033,age_95%_HPD={45.9692,45.9692}]:4.205003,(((EupG_01_126[&index=11,age_95%_HPD={0,35.6214}]:-1.278367,Palaeo_JMT[&index=69,age_95%_HPD={0,35.7835}]:-1.351907)[&index=122,posterior=0.008099,age_95%_HPD={0.083137,27.9112}]:9.894121,MayoG_V56788_2[&index=4,age_95%_HPD={0,35.5827}]:8.672590)[&index=123,posterior=0.000367,age_95%_HPD={0.237846,43.3015}]:28.502702,(EupG_01_179[&index=41,age_95%_HPD={0,36.7258}]:0.506335,Lasanius[&index=39,age_95%_HPD={0,36.1225}]:0.387455)[&index=124,posterior=0.007533,age_95%_HPD={0.113243,29.6812}]:36.624747)[&index=125,posterior=0.000033,age_95%_HPD={46.0538,46.0538}]:4.120455)[&index=126,posterior=0.000033,age_95%_HPD={50.1742,50.1742}]:0.819326)[&index=127,posterior=0.000033,age_95%_HPD={50.9935,50.9935}]:5.110939,(((MayoG_PF12387_15[&index=45,age_95%_HPD={0,36.73}]:1.025998,Pri_Late_Larval_D4[&index=13,sampled_ancestor=0.000033,age_95%_HPD={0,36.9582}]:0.998698)[&index=128,posterior=0.007066,age_95%_HPD={0.031417,50.0645}]:3.989990,EupG_01_69[&index=68,age_95%_HPD={0,37.0307}]:5.057381)[&index=129,posterior=0.000200,age_95%_HPD={0.673657,12.9053}]:39.308265,Palaeo_Johanson[&index=38,age_95%_HPD={0,36.1347}]:44.371741)[&index=130,posterior=0.000033,age_95%_HPD={53.4034,53.4034}]:2.701133)[&index=131,posterior=0.000033,age_95%_HPD={56.1045,56.1045}]:2.777225,MayoG_V56806_4[&index=63,age_95%_HPD={0,35.5058}]:50.012799)[&index=132,posterior=0.000033,age_95%_HPD={58.8817,58.8817}]:4.693224,MayoG_PF8344_18[&index=44,age_95%_HPD={0,36.259}]:54.580905)[&index=133,posterior=0.000033,age_95%_HPD={63.5749,63.5749}]:-31.794378,Priscomyzon[&index=52,age_95%_HPD={0,37.2413}]:22.682691)[&index=134,posterior=0.000167,age_95%_HPD={0.754011,63.9951}]:-9.591128,EupG_P6813[&index=54,age_95%_HPD={0,36.8455}]:13.179113)[&index=135,posterior=0.007866,age_95%_HPD={0.967313,89.1988}]:-3.494916,Achanarella[&index=1,age_95%_HPD={0.472761,71.5151}]:0.734300,EupG_01_137[&index=9,age_95%_HPD={0,37.0084}]:9.583413)[&index=136,posterior=1.000000,age_95%_HPD={0.480639,74.6666}]:0.000000;
+End;
