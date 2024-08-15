@@ -1,0 +1,34 @@
+################################################################################
+#MK_Model script for looking at how different decay rates effect tree topology
+#
+# Author: Alissa Watson
+#
+# Script adapted from: Phylogenetic inference with discrete morphological data
+# Author: April M. Wright
+# Gitbhub: https://revbayes.github.io/tutorials/morph_tree/V2
+###############################################################################
+#Helper variables (variables used in analysis but are not parameters)
+taxa <- taxa.names()
+num_taxa <- taxa.size()
+num_branches <- 2 * num_taxa - 2
+
+#store moves
+#Create workspace variable (used to propose new states for every stochastic node)
+moves = VectorMoves()
+
+################################################################################
+##The Mk Tree model 
+#Create a joint prior on the branch lengths
+#branch lengths will be drawn from an exponential distribution with parameter 0.2
+br_len_lambda ~ dnExp(0.2)
+moves.append(mvScale(br_len_lambda, weight=2))
+
+#Combine the branch lengths with a uniform prior on topology to make the tree
+#Define the tree parameter and generate topology
+phylogeny ~ dnUniformTopologyBranchLength(taxa, branchLengthDistribution=dnExponential(br_len_lambda))
+moves.append(mvNNI(phylogeny, weight=num_branches/6.0))
+moves.append(mvSPR(phylogeny, weight=num_branches/30.0))
+moves.append(mvBranchLengthScale(phylogeny, weight=num_branches))
+
+#Get tree length from phylogeny
+tree_length := phylogeny.treeLength()

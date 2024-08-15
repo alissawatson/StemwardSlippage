@@ -1,0 +1,39 @@
+################################################################################
+#MCMC script for looking at how different decay rates effect tree topology
+#
+# Author: Alissa Watson
+#
+# Script adapted from: Phylogenetic inference with discrete morphological data
+# Author: April M. Wright
+# Gitbhub: https://revbayes.github.io/tutorials/morph_tree/V2
+################################################################################
+#state model name
+source(model_file_name)
+
+#State model variable
+mymodel = model(phylogeny)
+
+#Create vector for monitors of this analysis
+monitors = VectorMonitors()
+
+#Specify the number of iterations, the monitors and the burn
+#mnModel indicates that we wish to sample MCMC every 10 samples
+monitors.append( mnModel(filename="output_" + model_name + "/" + analysis_name + "_posterior.log",printgen=10)) 
+monitors.append( mnFile(filename="output_" + model_name + "/" + analysis_name + "_posterior.trees",printgen=10, phylogeny) )
+monitors.append( mnScreen(printgen=500, tree_length) )
+monitors.append( mnStochasticVariable(filename="output_" + model_name + "/" + analysis_name + "_posterior.var",printgen=10) )
+
+#Define MCMC (initialize phylogeny)
+#nruns= specifies that there are 2 independent mcmc runs occurring during analysis
+mymcmc = mcmc(mymodel, monitors, moves, nruns=2, combine="mixed")
+mymcmc.burnin(generations=20000,tuningInterval=200)
+
+#Run MCMC
+mymcmc.run(generations=200000,tuningInterval=200, underPrior= TRUE)
+
+#Get the MCC summary tree
+#Look at output (output_Mk folder) and use Tracer to check for convergence at this stage
+#read in tree trace
+trace = readTreeTrace("output_" + model_name + "/" + analysis_name + "_posterior.trees")
+#Construct maximum clade credibility (MCC) tree
+mccTree(trace, file= "output_" + model_name + "/" + analysis_name + ".mcc.tre")

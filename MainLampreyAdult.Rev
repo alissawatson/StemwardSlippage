@@ -1,0 +1,30 @@
+######################################################################
+#
+# How different decay rates effect tree topology
+#
+# Author: Alissa Watson
+# Date: August 14th
+#
+######################################################################
+#setwd
+setwd("C:/Users/Alissa/Documents/School/GraduateSchool/Summer2024/Phylogenetics/Project") 
+seed(217953)
+#####################################
+##EMPIRICAL MCMC ANALYSIS
+#Set up workspace
+analysis_name = "LampreyAdult"
+model_name = "Mk"
+model_file_name = "scripts/" +model_name+"_Model.Rev"
+
+#read in data obtained from Reeves and Sansom (2023) paper
+taxa <- readDiscreteCharacterData("data/LampreyAdult.nex")
+taxa
+
+#Specify the maximum number of states in the morphological alignment.
+num_states ="2"
+
+#Run script
+source("scripts/MCMC.Rev")
+
+#Quit
+q()
